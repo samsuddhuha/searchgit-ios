@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DQT-ep-i8k">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="JZa-t3-xuh">
+            <objects>
+                <navigationController id="DQT-ep-i8k" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mj5-5E-AN7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CTX-Iu-dOt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Hd-Uf-xVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1682" y="77"/>
+        </scene>
+        <!--Repo Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="repoController" id="BYZ-38-t0r" customClass="RepoController" customModule="searchgit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBZ-P5-HgE">
+                                <rect key="frame" x="32" y="128" width="350" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's find repository in Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nm-iI-Qzg">
+                                <rect key="frame" x="32" y="168" width="350" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="ColorGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttb-C5-fAd">
+                                <rect key="frame" x="32" y="217" width="350" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb3-9B-YRk">
+                                        <rect key="frame" x="302" y="0.0" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="VtM-MC-xfQ"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_search" backgroundImage="bg_white"/>
+                                        <connections>
+                                            <action selector="btnSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="II5-QH-0nk"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Find a repository..." textAlignment="natural" minimumFontSize="17" background="bg_white" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-w0-fP4">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0m7-w0-fP4" secondAttribute="bottom" id="3aF-ev-b32"/>
+                                    <constraint firstAttribute="trailing" secondItem="qb3-9B-YRk" secondAttribute="trailing" id="Z8T-Ya-ZaW"/>
+                                    <constraint firstItem="0m7-w0-fP4" firstAttribute="top" secondItem="Ttb-C5-fAd" secondAttribute="top" id="duD-De-hMz"/>
+                                    <constraint firstItem="qb3-9B-YRk" firstAttribute="leading" secondItem="0m7-w0-fP4" secondAttribute="trailing" constant="8" id="iRT-B7-lwR"/>
+                                    <constraint firstAttribute="height" constant="48" id="ijJ-ph-cbt"/>
+                                    <constraint firstItem="qb3-9B-YRk" firstAttribute="top" secondItem="Ttb-C5-fAd" secondAttribute="top" id="nUg-rc-1k6"/>
+                                    <constraint firstItem="0m7-w0-fP4" firstAttribute="leading" secondItem="Ttb-C5-fAd" secondAttribute="leading" id="pv8-zN-3XG"/>
+                                    <constraint firstAttribute="bottom" secondItem="qb3-9B-YRk" secondAttribute="bottom" id="vuR-Sy-mVg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="ColorLightBlue"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Nm-iI-Qzg" secondAttribute="trailing" constant="32" id="Dqd-jN-Y1P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ttb-C5-fAd" secondAttribute="trailing" constant="32" id="Fgd-7m-BqD"/>
+                            <constraint firstItem="Ttb-C5-fAd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="G9s-Bz-bea"/>
+                            <constraint firstItem="dBZ-P5-HgE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="NYy-R5-TKH"/>
+                            <constraint firstItem="8Nm-iI-Qzg" firstAttribute="top" secondItem="dBZ-P5-HgE" secondAttribute="bottom" constant="4" id="X2B-qz-UKb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dBZ-P5-HgE" secondAttribute="trailing" constant="32" id="aDU-xM-r7Y"/>
+                            <constraint firstItem="8Nm-iI-Qzg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="bx7-Lm-LJp"/>
+                            <constraint firstItem="Ttb-C5-fAd" firstAttribute="top" secondItem="8Nm-iI-Qzg" secondAttribute="bottom" constant="32" id="cfC-cH-01E"/>
+                            <constraint firstItem="dBZ-P5-HgE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="qxg-Va-bDj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mYL-6l-EWG"/>
+                    <connections>
+                        <outlet property="btnSearch" destination="qb3-9B-YRk" id="a5E-R5-QLF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-819" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_white" width="248" height="48"/>
+        <image name="ic_search" width="20" height="20"/>
+        <namedColor name="ColorGray">
+            <color red="0.53515446190000004" green="0.57191318270000002" blue="0.60303252939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorLightBlue">
+            <color red="0.95750194789999998" green="0.9723243117" blue="0.98555856939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

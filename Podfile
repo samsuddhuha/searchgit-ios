@@ -6,6 +6,10 @@ target 'searchgit' do
   use_frameworks!
 
   # Pods for searchgit
+  pod 'MaterialComponents/BottomSheet'
+  pod 'SwiftyJSON'
+  pod 'Moya', '~> 14.0'
+  pod 'NVActivityIndicatorView', '~> 4.4'
 
   target 'searchgitTests' do
     inherit! :search_paths
