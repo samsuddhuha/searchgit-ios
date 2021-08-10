@@ -25,7 +25,7 @@ class DialogFailure: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         view.roundCorners([.topLeft, .topRight], radius: 8.0)
-        btnClose.dropShadow(color: UIColor.lightGray, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+        btnClose.dropShadow()
         
         if dataMessage != "" {
             labelMessage.text = dataMessage

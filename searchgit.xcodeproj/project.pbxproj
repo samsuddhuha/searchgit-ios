@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601966E426C209190046B81B /* TableInfinityScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601966E326C209190046B81B /* TableInfinityScroll.swift */; };
+		601966EC26C20F7A0046B81B /* RepoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601966EB26C20F7A0046B81B /* RepoViewCell.swift */; };
 		60C43C6526C15CEF00E0AC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C43C6426C15CEF00E0AC02 /* AppDelegate.swift */; };
 		60C43C6726C15CEF00E0AC02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C43C6626C15CEF00E0AC02 /* SceneDelegate.swift */; };
-		60C43C6926C15CEF00E0AC02 /* RepoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C43C6826C15CEF00E0AC02 /* RepoController.swift */; };
+		60C43C6926C15CEF00E0AC02 /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C43C6826C15CEF00E0AC02 /* RepoViewController.swift */; };
 		60C43C6C26C15CEF00E0AC02 /* Repo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C43C6A26C15CEF00E0AC02 /* Repo.storyboard */; };
 		60C43C6E26C15CF100E0AC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C43C6D26C15CF100E0AC02 /* Assets.xcassets */; };
 		60C43C7126C15CF100E0AC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C43C6F26C15CF100E0AC02 /* LaunchScreen.storyboard */; };
@@ -54,10 +56,12 @@
 		3B4BE88A7BA30739A967169A /* Pods-searchgitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchgitTests.debug.xcconfig"; path = "Target Support Files/Pods-searchgitTests/Pods-searchgitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44419746225318A7395AC454 /* Pods-searchgit-searchgitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchgit-searchgitUITests.debug.xcconfig"; path = "Target Support Files/Pods-searchgit-searchgitUITests/Pods-searchgit-searchgitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A6E466D5A445D6F3723684F /* Pods_searchgit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_searchgit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		601966E326C209190046B81B /* TableInfinityScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInfinityScroll.swift; sourceTree = "<group>"; };
+		601966EB26C20F7A0046B81B /* RepoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewCell.swift; sourceTree = "<group>"; };
 		60C43C6126C15CEF00E0AC02 /* searchgit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchgit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C43C6426C15CEF00E0AC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60C43C6626C15CEF00E0AC02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		60C43C6826C15CEF00E0AC02 /* RepoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoController.swift; sourceTree = "<group>"; };
+		60C43C6826C15CEF00E0AC02 /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
 		60C43C6B26C15CEF00E0AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Repo.storyboard; sourceTree = "<group>"; };
 		60C43C6D26C15CF100E0AC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60C43C7026C15CF100E0AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601966E226C208F10046B81B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				601966E326C209190046B81B /* TableInfinityScroll.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		60C43C5826C15CEF00E0AC02 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +197,7 @@
 				60C43CA726C1628700E0AC02 /* Constant */,
 				60C43CA626C1627200E0AC02 /* Dialog */,
 				60C43CA826C1629D00E0AC02 /* Extension */,
+				601966E226C208F10046B81B /* Utility */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -255,7 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				60C43C6A26C15CEF00E0AC02 /* Repo.storyboard */,
-				60C43C6826C15CEF00E0AC02 /* RepoController.swift */,
+				60C43C6826C15CEF00E0AC02 /* RepoViewController.swift */,
+				601966EB26C20F7A0046B81B /* RepoViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -540,11 +554,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C43CED26C16E5500E0AC02 /* RepoModel.swift in Sources */,
-				60C43C6926C15CEF00E0AC02 /* RepoController.swift in Sources */,
+				60C43C6926C15CEF00E0AC02 /* RepoViewController.swift in Sources */,
 				60C43CA226C1626B00E0AC02 /* Service.swift in Sources */,
 				60C43CFC26C200A600E0AC02 /* TextFieldExtension.swift in Sources */,
 				60C43CF226C16EEA00E0AC02 /* RepoModule.swift in Sources */,
 				60C43CDB26C16D6C00E0AC02 /* DialogFailure.swift in Sources */,
+				601966E426C209190046B81B /* TableInfinityScroll.swift in Sources */,
 				60C43C6526C15CEF00E0AC02 /* AppDelegate.swift in Sources */,
 				60C43CE826C16E0500E0AC02 /* ViewExtension.swift in Sources */,
 				60C43C6726C15CEF00E0AC02 /* SceneDelegate.swift in Sources */,
@@ -553,6 +568,7 @@
 				60C43CC526C16BB100E0AC02 /* ControllerExtension.swift in Sources */,
 				60C43CF726C1FD7100E0AC02 /* ButtonExtension.swift in Sources */,
 				60C43CD526C16D0300E0AC02 /* ImageExtension.swift in Sources */,
+				601966EC26C20F7A0046B81B /* RepoViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
